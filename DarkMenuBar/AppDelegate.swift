@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import ServiceManagement
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -15,6 +16,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc var darkMode = (SLSGetAppearanceThemeLegacy() == 1) {
         didSet {
             SLSSetAppearanceThemeLegacy(darkMode ? 1 : 0)
+        }
+    }
+
+    @objc var launchAtLogin = false {
+        didSet {
+            let launcherAppId = "jp.mzp.DarkMenuBar.Launcher"
+            SMLoginItemSetEnabled(launcherAppId as CFString, true)
         }
     }
 
