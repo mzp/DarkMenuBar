@@ -15,7 +15,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        statusItem.button?.title = "DarkMode"
+        let icon = NSImage(named: "MenuIcon")
+        icon?.isTemplate = true // best for dark mode
+        statusItem.button?.image = icon
         statusItem.menu = menu
     }
 
