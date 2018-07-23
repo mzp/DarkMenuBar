@@ -22,7 +22,7 @@
                 <menuItem title="Toggle Dark mode" id="PkO-B0-l5b">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <binding destination="Voe-Tx-rLC" name="value" keyPath="self.darkMode" id="h8a-bu-glU"/>
+                        <binding destination="Voe-Tx-rLC" name="value" keyPath="darkMode" id="na6-ev-CXk"/>
                     </connections>
                 </menuItem>
                 <menuItem title="Quit" id="9qw-yb-sJ2">

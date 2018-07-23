@@ -12,9 +12,9 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var menu: NSMenu!
 
-    @objc var darkMode = false {
+    @objc var darkMode = (SLSGetAppearanceThemeLegacy() == 1) {
         didSet {
-            NSLog("%@", "toggle dark mode")
+            SLSSetAppearanceThemeLegacy(darkMode ? 1 : 0)
         }
     }
 

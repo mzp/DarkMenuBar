@@ -10,6 +10,7 @@
 		1323F97D2105CDB900929A41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1323F97C2105CDB900929A41 /* AppDelegate.swift */; };
 		1323F97F2105CDBB00929A41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1323F97E2105CDBB00929A41 /* Assets.xcassets */; };
 		1323F9822105CDBB00929A41 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1323F9802105CDBB00929A41 /* MainMenu.xib */; };
+		132D33A12105E4BE0011861C /* SkyLight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132D33A02105E4BE0011861C /* SkyLight.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		1323F9812105CDBB00929A41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1323F9832105CDBB00929A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1323F9842105CDBB00929A41 /* DarkMenuBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DarkMenuBar.entitlements; sourceTree = "<group>"; };
+		132D339E2105E3EF0011861C /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+		132D33A02105E4BE0011861C /* SkyLight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkyLight.framework; path = ../../../../System/Library/PrivateFrameworks/SkyLight.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				132D33A12105E4BE0011861C /* SkyLight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +41,7 @@
 			children = (
 				1323F97B2105CDB900929A41 /* DarkMenuBar */,
 				1323F97A2105CDB900929A41 /* Products */,
+				132D339F2105E4BD0011861C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +61,17 @@
 				1323F9802105CDBB00929A41 /* MainMenu.xib */,
 				1323F9832105CDBB00929A41 /* Info.plist */,
 				1323F9842105CDBB00929A41 /* DarkMenuBar.entitlements */,
+				132D339E2105E3EF0011861C /* BridgeHeader.h */,
 			);
 			path = DarkMenuBar;
+			sourceTree = "<group>";
+		};
+		132D339F2105E4BD0011861C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				132D33A02105E4BE0011861C /* SkyLight.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +219,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = DarkMenuBar/BridgeHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -259,6 +274,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = DarkMenuBar/BridgeHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
@@ -278,6 +294,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.DarkMenuBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 			};
 			name = Debug;
 		};
@@ -296,6 +316,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.DarkMenuBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 			};
 			name = Release;
 		};
