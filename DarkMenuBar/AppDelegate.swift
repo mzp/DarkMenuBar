@@ -12,6 +12,12 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var menu: NSMenu!
 
+    @objc var darkMode = false {
+        didSet {
+            NSLog("%@", "toggle dark mode")
+        }
+    }
+
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
