@@ -10,18 +10,17 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
+    @IBOutlet weak var menu: NSMenu!
 
-    @IBOutlet weak var window: NSWindow!
-
+    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        statusItem.button?.title = "DarkMode"
+        statusItem.menu = menu
     }
 
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+    @IBAction func quit(_ sender: NSMenuItem) {
+        NSApplication.shared.terminate(self)
     }
-
-
 }
 
