@@ -7,6 +7,9 @@
 //
 
 import Cocoa
+import ServiceManagement
+
+fileprivate let kLaunchAtLogin = "launchAtLogin"
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -15,6 +18,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc var darkMode = (SLSGetAppearanceThemeLegacy() == 1) {
         didSet {
             SLSSetAppearanceThemeLegacy(darkMode ? 1 : 0)
+        }
+    }
+
+    @objc var launchAtLogin = UserDefaults.standard.bool(forKey: kLaunchAtLogin) {
+        didSet {
+            let launcherAppId = "jp.mzp.DarkMenuBar.LaunchAtLoginHelperApp"
+            if SMLoginItemSetEnabled(launcherAppId as CFString, launchAtLogin) {
+                let userDefaults = UserDefaults.standard
+                userDefaults.set(launchAtLogin, forKey: kLaunchAtLogin)
+                userDefaults.synchronize()
+            }
         }
     }
 
@@ -31,4 +45,3 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSApplication.shared.terminate(self)
     }
 }
-

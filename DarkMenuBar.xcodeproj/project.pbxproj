@@ -11,7 +11,35 @@
 		1323F97F2105CDBB00929A41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1323F97E2105CDBB00929A41 /* Assets.xcassets */; };
 		1323F9822105CDBB00929A41 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1323F9802105CDBB00929A41 /* MainMenu.xib */; };
 		132D33A12105E4BE0011861C /* SkyLight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132D33A02105E4BE0011861C /* SkyLight.framework */; };
+		135029F52105F3BB00E48BAE /* DarkMenuBarLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 13FA77E92105EC06008959D7 /* DarkMenuBarLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		13FA77EC2105EC06008959D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA77EB2105EC06008959D7 /* AppDelegate.swift */; };
+		13FA77EE2105EC0C008959D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13FA77ED2105EC0C008959D7 /* Assets.xcassets */; };
+		13FA77F12105EC0C008959D7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13FA77EF2105EC0C008959D7 /* MainMenu.xib */; };
+		13FA77FF2105EFD1008959D7 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FA77F92105EDAE008959D7 /* ServiceManagement.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		135029F02105F2F500E48BAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1323F9712105CDB900929A41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13FA77E82105EC06008959D7;
+			remoteInfo = DarkMenuBarLauncher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		135029F42105F3AD00E48BAE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				135029F52105F3BB00E48BAE /* DarkMenuBarLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1323F9792105CDB900929A41 /* DarkMenuBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkMenuBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +50,13 @@
 		1323F9842105CDBB00929A41 /* DarkMenuBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DarkMenuBar.entitlements; sourceTree = "<group>"; };
 		132D339E2105E3EF0011861C /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		132D33A02105E4BE0011861C /* SkyLight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkyLight.framework; path = ../../../../System/Library/PrivateFrameworks/SkyLight.framework; sourceTree = "<group>"; };
+		13FA77E92105EC06008959D7 /* DarkMenuBarLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkMenuBarLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13FA77EB2105EC06008959D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		13FA77ED2105EC0C008959D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13FA77F02105EC0C008959D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		13FA77F22105EC0C008959D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13FA77F32105EC0C008959D7 /* DarkMenuBarLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DarkMenuBarLauncher.entitlements; sourceTree = "<group>"; };
+		13FA77F92105EDAE008959D7 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +64,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13FA77FF2105EFD1008959D7 /* ServiceManagement.framework in Frameworks */,
 				132D33A12105E4BE0011861C /* SkyLight.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13FA77E62105EC06008959D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				1323F97B2105CDB900929A41 /* DarkMenuBar */,
+				13FA77EA2105EC06008959D7 /* DarkMenuBarLauncher */,
 				1323F97A2105CDB900929A41 /* Products */,
 				132D339F2105E4BD0011861C /* Frameworks */,
 			);
@@ -49,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				1323F9792105CDB900929A41 /* DarkMenuBar.app */,
+				13FA77E92105EC06008959D7 /* DarkMenuBarLauncher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,9 +114,22 @@
 		132D339F2105E4BD0011861C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				13FA77F92105EDAE008959D7 /* ServiceManagement.framework */,
 				132D33A02105E4BE0011861C /* SkyLight.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13FA77EA2105EC06008959D7 /* DarkMenuBarLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				13FA77EB2105EC06008959D7 /* AppDelegate.swift */,
+				13FA77ED2105EC0C008959D7 /* Assets.xcassets */,
+				13FA77EF2105EC0C008959D7 /* MainMenu.xib */,
+				13FA77F22105EC0C008959D7 /* Info.plist */,
+				13FA77F32105EC0C008959D7 /* DarkMenuBarLauncher.entitlements */,
+			);
+			path = DarkMenuBarLauncher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,14 +142,33 @@
 				1323F9752105CDB900929A41 /* Sources */,
 				1323F9762105CDB900929A41 /* Frameworks */,
 				1323F9772105CDB900929A41 /* Resources */,
+				135029F42105F3AD00E48BAE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				135029F12105F2F500E48BAE /* PBXTargetDependency */,
+			);
+			name = DarkMenuBar;
+			productName = DarkMenuBar;
+			productReference = 1323F9792105CDB900929A41 /* DarkMenuBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13FA77E82105EC06008959D7 /* DarkMenuBarLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13FA77F42105EC0C008959D7 /* Build configuration list for PBXNativeTarget "DarkMenuBarLauncher" */;
+			buildPhases = (
+				13FA77E52105EC06008959D7 /* Sources */,
+				13FA77E62105EC06008959D7 /* Frameworks */,
+				13FA77E72105EC06008959D7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DarkMenuBar;
-			productName = DarkMenuBar;
-			productReference = 1323F9792105CDB900929A41 /* DarkMenuBar.app */;
+			name = DarkMenuBarLauncher;
+			productName = DarkMenuBarLauncher;
+			productReference = 13FA77E92105EC06008959D7 /* DarkMenuBarLauncher.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,6 +182,9 @@
 				ORGANIZATIONNAME = mzp;
 				TargetAttributes = {
 					1323F9782105CDB900929A41 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					13FA77E82105EC06008959D7 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -123,6 +203,7 @@
 			projectRoot = "";
 			targets = (
 				1323F9782105CDB900929A41 /* DarkMenuBar */,
+				13FA77E82105EC06008959D7 /* DarkMenuBarLauncher */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +218,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13FA77E72105EC06008959D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FA77EE2105EC0C008959D7 /* Assets.xcassets in Resources */,
+				13FA77F12105EC0C008959D7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -148,13 +238,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13FA77E52105EC06008959D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FA77EC2105EC06008959D7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		135029F12105F2F500E48BAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13FA77E82105EC06008959D7 /* DarkMenuBarLauncher */;
+			targetProxy = 135029F02105F2F500E48BAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1323F9802105CDBB00929A41 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1323F9812105CDBB00929A41 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		13FA77EF2105EC0C008959D7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13FA77F02105EC0C008959D7 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -284,8 +398,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DarkMenuBar/DarkMenuBar.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VG2YYSKSHY;
 				INFOPLIST_FILE = DarkMenuBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,6 +409,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.DarkMenuBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,8 +423,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DarkMenuBar/DarkMenuBar.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VG2YYSKSHY;
 				INFOPLIST_FILE = DarkMenuBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -315,11 +434,56 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.DarkMenuBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
 				);
+			};
+			name = Release;
+		};
+		13FA77F52105EC0C008959D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DarkMenuBarLauncher/DarkMenuBarLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VG2YYSKSHY;
+				INFOPLIST_FILE = DarkMenuBarLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.DarkMenuBar.LaunchAtLoginHelperApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		13FA77F62105EC0C008959D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DarkMenuBarLauncher/DarkMenuBarLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VG2YYSKSHY;
+				INFOPLIST_FILE = DarkMenuBarLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.DarkMenuBar.LaunchAtLoginHelperApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -340,6 +504,15 @@
 			buildConfigurations = (
 				1323F9882105CDBB00929A41 /* Debug */,
 				1323F9892105CDBB00929A41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13FA77F42105EC0C008959D7 /* Build configuration list for PBXNativeTarget "DarkMenuBarLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13FA77F52105EC0C008959D7 /* Debug */,
+				13FA77F62105EC0C008959D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

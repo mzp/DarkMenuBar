@@ -25,6 +25,12 @@
                         <binding destination="Voe-Tx-rLC" name="value" keyPath="darkMode" id="na6-ev-CXk"/>
                     </connections>
                 </menuItem>
+                <menuItem title="Launch at login" id="edW-ME-sEg">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <binding destination="Voe-Tx-rLC" name="value" keyPath="launchAtLogin" id="flR-vq-Xt8"/>
+                    </connections>
+                </menuItem>
                 <menuItem title="Quit" id="9qw-yb-sJ2">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
