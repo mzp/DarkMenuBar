@@ -2,7 +2,7 @@
 Toggle dark mode from menubar.
 
 ## Download
-WIP
+https://github.com/mzp/DarkMenuBar/releases/tag/v1.0
 
 ## Requirement
 
