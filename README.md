@@ -1,6 +1,8 @@
 # :first_quarter_moon: DarkMenuMode
 Toggle dark mode from menubar.
 
+![](./demo.gif)
+
 ## Download
 https://github.com/mzp/DarkMenuBar/releases/tag/v1.0
 
