@@ -6,7 +6,7 @@ https://github.com/mzp/DarkMenuBar/releases/tag/v1.0
 
 ## Requirement
 
- * macOS Mojave
+ * macOS High Sierra/Mojave
  * Xcode 10 (if you want to build)
 
 ## Build
